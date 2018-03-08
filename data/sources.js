@@ -2053,6 +2053,7 @@
       },
       "pilots": {
         "253": 1,
+        "261": 2,
         "262": 1,
         "263": 1,
         "264": 1
@@ -2066,14 +2067,16 @@
     "id": 55,
     "image": "sources/swx73-product.png",
     "thumb": "sources/swx73-thumb.jpg",
-    "announcement_date": "2017-05-30"
+    "announcement_date": "2017-05-30",
+    "released": true,
+    "release_date": "2017-10-26"
   },
   {
     "name": "Alpha-class Star Wing Expansion Pack",
     "wave": 12,
     "sku": "SWX69",
     "announcement_date": "2017-08-21",
-    "released": false,
+    "released": true,
     "id": 56,
     "thumb": "sources/swx69-thumb.jpg",
     "image": "sources/swx69-product.png",
@@ -2101,14 +2104,15 @@
         11,
         26
       ]
-    }
+    },
+    "release_date": "2017-12-08"
   },
   {
     "name": "M12-L Kimogila Fighter Expansion Pack",
     "wave": 12,
     "sku": "SWX70",
     "announcement_date": "2017-08-21",
-    "released": false,
+    "released": true,
     "image": "sources/swx70-product.png",
     "thumb": "sources/swx70-thumb.jpg",
     "id": 57,
@@ -2119,17 +2123,25 @@
       "upgrades": {
         "113": 1,
         "136": 1,
-        "332": 1
+        "332": 1,
+        "341": 2,
+        "342": 2,
+        "352": 2,
+        "353": 1
       },
       "pilots": {
-        "266": 1
+        "266": 1,
+        "273": 1,
+        "274": 1,
+        "282": 1
       },
       "reference-cards": [
         3,
         25,
         26
       ]
-    }
+    },
+    "release_date": "2017-12-08"
   },
   {
     "name": "Phantom II Expansion Pack",
@@ -2143,18 +2155,27 @@
         "52": 1
       },
       "pilots": {
-        "267": 1
+        "267": 1,
+        "275": 1,
+        "276": 1,
+        "277": 1
       },
       "upgrades": {
         "333": 1,
-        "334": 1
+        "334": 1,
+        "343": 1,
+        "344": 1,
+        "345": 1,
+        "346": 1
       },
       "reference-cards": [
         20,
         26
       ]
     },
-    "thumb": "sources/swx72-thumb.png"
+    "thumb": "sources/swx72-thumb.png",
+    "released": true,
+    "release_date": "2017-12-08"
   },
   {
     "name": "TIE Silencer Expansion Pack",
@@ -2164,7 +2185,10 @@
     "id": 59,
     "contents": {
       "pilots": {
-        "268": 1
+        "268": 1,
+        "281": 1,
+        "283": 1,
+        "284": 1
       },
       "conditions": {
         "0": 1
@@ -2173,14 +2197,19 @@
         "44": 1,
         "188": 2,
         "277": 2,
-        "337": 1
+        "337": 1,
+        "347": 2,
+        "350": 2,
+        "351": 2
       },
       "ships": {
         "53": 1
       }
     },
     "image": "sources/swx68-product.png",
-    "thumb": "sources/swx68-thumb.jpg"
+    "thumb": "sources/swx68-thumb.jpg",
+    "release_date": "2017-12-08",
+    "released": true
   },
   {
     "name": "Resistance Bomber Expansion Pack",
@@ -2199,15 +2228,75 @@
         "242": 1,
         "288": 1,
         "335": 1,
-        "336": 3
+        "336": 3,
+        "347": 2,
+        "348": 1,
+        "349": 1
       },
       "conditions": {
         "7": 1
       },
       "pilots": {
-        "269": 1
+        "269": 1,
+        "278": 1,
+        "279": 1,
+        "280": 1
       }
     },
-    "id": 60
+    "id": 60,
+    "release_date": "2017-12-08",
+    "released": true
+  },
+  {
+    "name": "Saw's Renegades Expansion Pack",
+    "wave": 14,
+    "sku": "SWX74",
+    "announcement_date": "2018-02-13",
+    "contents": {
+      "ships": {
+        "0": 1,
+        "45": 1
+      },
+      "upgrades": {
+        "141": 1,
+        "271": 1,
+        "272": 1,
+        "346": 1,
+        "354": 1,
+        "355": 1
+      },
+      "conditions": {
+        "8": 1
+      },
+      "pilots": {
+        "285": 1
+      }
+    },
+    "id": 61,
+    "image": "sources/swx74-product.png",
+    "thumb": "sources/swx74-thumb.jpg"
+  },
+  {
+    "name": "TIE Reaper Expansion Pack",
+    "wave": 14,
+    "sku": "SWX75",
+    "announcement_date": "2018-02-13",
+    "image": "sources/swx75-product.png",
+    "thumb": "sources/swx75-thumb.jpg",
+    "id": 62,
+    "contents": {
+      "ships": {
+        "55": 1
+      },
+      "upgrades": {
+        "55": 1,
+        "245": 2,
+        "356": 1,
+        "357": 1
+      },
+      "pilots": {
+        "286": 1
+      }
+    }
   }
 ]

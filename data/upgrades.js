@@ -1145,7 +1145,7 @@
     "unique": true,
     "slot": "Salvaged Astromech",
     "points": 0,
-    "text": "If you are equipped with a bomb that can be dropped when you reveal your maneuver, you may drop the bomb after you execute your maneuver instead.",
+    "text": "After you reveal and execute a maneuver, if you did not overlap a ship, you may discard 1 of your equipped [Bomb] Upgrade cards without the \"<strong>Action:</strong>\" header to drop the corresponding bomb token.",
     "image": "upgrades/Salvaged Astromech/genius.png",
     "xws": "genius"
   },
@@ -2176,6 +2176,7 @@
       "TIE Interceptor",
       "TIE Phantom",
       "TIE Punisher",
+      "TIE Reaper",
       "TIE Silencer",
       "TIE Striker",
       "TIE/fo Fighter",
@@ -2747,6 +2748,7 @@
     "points": 1,
     "slot": "Elite",
     "faction": "Scum and Villainy",
+    "squadLimited": 2,
     "id": 236
   },
   {
@@ -3437,17 +3439,12 @@
     "points": 2,
     "slot": "Modification",
     "ship": [
-      "TIE Adv. Prototype",
-      "TIE Advanced",
+      "TIE Aggressor",
       "TIE Bomber",
-      "TIE Defender",
-      "TIE Fighter",
-      "TIE Interceptor",
       "TIE Phantom",
       "TIE Punisher",
-      "TIE Silencer",
+      "TIE Reaper",
       "TIE Striker",
-      "TIE/fo Fighter",
       "TIE/sf Fighter"
     ],
     "id": 296
@@ -3793,7 +3790,7 @@
   },
   {
     "image": "upgrades/Bomb/bomblet-generator.png",
-    "text": "When you reveal your maneuver, you may <strong>drop</strong> 1 bomblet token.<br /><br />This token <strong>detonates</strong> at end of the Activation phase.",
+    "text": "When you reveal your maneuver, you may <strong>drop</strong> 1 bomblet token.<br /><br />This token <strong>detonates</strong> at the end of the Activation phase.",
     "name": "Bomblet Generator",
     "xws": "bombletgenerator",
     "unique": true,
@@ -3904,7 +3901,8 @@
     "ship": [
       "M12-L Kimogila Fighter"
     ],
-    "id": 332
+    "id": 332,
+    "image": "upgrades/Title/enforcer.png"
   },
   {
     "image": "upgrades/Title/ghost-swx72.png",
@@ -3963,7 +3961,8 @@
     "ship": [
       "TIE Silencer"
     ],
-    "id": 337
+    "id": 337,
+    "image": "upgrades/Title/first-order-vanguard.png"
   },
   {
     "image": "upgrades/Title/os-1-arsenal-loadout.png",
@@ -4009,5 +4008,176 @@
     "points": 1,
     "slot": "Elite",
     "id": 341
+  },
+  {
+    "image": "upgrades/Illicit/contraband-cybernetics.png",
+    "text": "When you become the active ship during the Activation phase, you may discard this card and receive 1 stress token. If you do, until the end of the round, you may perform actions and red maneuvers even while you are stressed.",
+    "name": "Contraband Cybernetics",
+    "xws": "contrabandcybernetics",
+    "points": 1,
+    "slot": "Illicit",
+    "id": 342
+  },
+  {
+    "image": "upgrades/Crew/maul.png",
+    "text": "When attacking, if you are not stressed, you may receive any number of stress tokens to reroll that many attack dice.<br /><br />After performing an attack that hits, you may remove 1 of your stress tokens.",
+    "name": "Maul",
+    "xws": "maul",
+    "unique": true,
+    "points": 3,
+    "slot": "Crew",
+    "faction": "Scum and Villainy",
+    "id": 343
+  },
+  {
+    "image": "upgrades/Crew/courier-droid.png",
+    "text": "At the start of the \"Place Forces\" step, you may choose to treat your pilot skill value as \"0\" or \"8\" until the end of the step.",
+    "name": "Courier Droid",
+    "xws": "courierdroid",
+    "limited": true,
+    "points": 0,
+    "slot": "Crew",
+    "id": 344
+  },
+  {
+    "image": "upgrades/Astromech/chopper.png",
+    "text": "<strong>Action:</strong> Discard 1 other equipped Upgrade card to recover 1 shield.",
+    "name": "\"Chopper\"",
+    "xws": "chopper-swx72",
+    "unique": true,
+    "points": 1,
+    "slot": "Astromech",
+    "id": 345
+  },
+  {
+    "image": "upgrades/Astromech/flight-assist-astromech.png",
+    "text": "You cannot attack ships outside your firing arc.<br /><br />After you execute a maneuver, if you did not overlap a ship or obstacle and there are no enemy ships inside your firing arc at Range 1-3, you may perform a free boost or barrel roll action.",
+    "name": "Flight-Assist Astromech",
+    "xws": "flightassistastromech",
+    "points": 1,
+    "slot": "Astromech",
+    "id": 346
+  },
+  {
+    "name": "Advanced Optics",
+    "xws": "advancedoptics",
+    "text": "You cannot have more than 1 focus token.<br /><br />During the End phase, do not remove an unused focus token from your ship.",
+    "points": 2,
+    "slot": "Tech",
+    "id": 347,
+    "image": "upgrades/Tech/advanced-optics.png"
+  },
+  {
+    "name": "Crossfire Formation",
+    "xws": "crossfireformation",
+    "text": "When defending, if there is at least 1 other friendly Resistance ship at Range 1-2 of the attacker, you may add one [Focus] result to your roll.",
+    "points": 2,
+    "slot": "Title",
+    "ship": [
+      "B/SF-17 Bomber"
+    ],
+    "id": 348,
+    "image": "upgrades/Title/crossfire-formation.png"
+  },
+  {
+    "text": "When a friendly bomb token detonates, you may choose not to suffer its effects. If you do, roll an attack die. on a [Hit] result, discard this card.",
+    "name": "Deflective Plating",
+    "xws": "deflectiveplating",
+    "points": 1,
+    "slot": "Modification",
+    "ship": [
+      "B/SF-17 Bomber"
+    ],
+    "id": 349,
+    "image": "upgrades/Modification/deflective-plating.png"
+  },
+  {
+    "image": "upgrades/Elite/debris-gambit.png",
+    "text": "<strong>Action:</strong> Assign 1 evade token to your ship for each obstacle at Range 1, to a maximum of 2 evade tokens.",
+    "name": "Debris Gambit",
+    "xws": "debrisgambit",
+    "points": 2,
+    "slot": "Elite",
+    "size": [
+      "small"
+    ],
+    "id": 350
+  },
+  {
+    "image": "upgrades/Tech/threat-tracker.png",
+    "text": "When an enemy ship inside your firing arc at Range 1-2 becomes the active ship during the Combat phase, you may spend your target lock on that ship to perform a free boost or barrel roll action if that action is on your action bar.",
+    "name": "Threat Tracker",
+    "xws": "threattracker",
+    "points": 3,
+    "slot": "Tech",
+    "size": [
+      "small"
+    ],
+    "id": 351
+  },
+  {
+    "text": "<strong>Attack (target lock):</strong> Discard this card to perform this attack.<br /><br />If this attack hits, the defender and each other ship at Range 1 receive 1 jam token. Then cancel <strong>all</strong> results.",
+    "name": "Scrambler Missiles",
+    "xws": "scramblermissiles",
+    "points": 2,
+    "slot": "Missile",
+    "range": "2-3",
+    "attack": 3,
+    "id": 352,
+    "image": "upgrades/Missile/scrambler-missiles.png"
+  },
+  {
+    "text": "You can acquire target locks on friendly ships.<br /><br />You can attack friendly ships.",
+    "name": "R5-TK",
+    "xws": "r5tk",
+    "unique": true,
+    "points": 0,
+    "slot": "Salvaged Astromech",
+    "id": 353,
+    "image": "upgrades/Salvaged Astromech/r5-tk.png"
+  },
+  {
+    "image": "upgrades/System/targeting-scrambler.png",
+    "text": "At the start of the Planning phase, you may receive a weapons disabled token to choose a ship at Range 1-3 and assign it the \"Scrambled\" Condition.",
+    "name": "Targeting Scrambler",
+    "xws": "targetingscrambler",
+    "unique": true,
+    "points": 0,
+    "slot": "System",
+    "conditions": [
+      "Scrambled"
+    ],
+    "id": 354
+  },
+  {
+    "text": "When attacking, you may suffer 1 damage to change all of your [Focus] results to [Critical Hit] results.",
+    "name": "Saw Gerrera",
+    "xws": "sawgerrera",
+    "unique": true,
+    "points": 1,
+    "slot": "Crew",
+    "faction": "Rebel Alliance",
+    "id": 355
+  },
+  {
+    "text": "During setup, before the \"Place Forces\" step, assign the \"Optimized Prototype\" Condition to a friendly Galactic Empire ship with 3 or fewer shields.",
+    "name": "Director Krennic",
+    "xws": "directorkrennic",
+    "unique": true,
+    "points": 5,
+    "slot": "Crew",
+    "faction": "Galactic Empire",
+    "id": 356
+  },
+  {
+    "image": "upgrades/Crew/death-troopers.png",
+    "text": "After another friendly ship at Range 1 becomes the defender, if you are inside the attacker's firing arc at Range 1-3, the attacker receives 1 stress token.",
+    "name": "Death Troopers",
+    "xws": "deathtroopers",
+    "unique": true,
+    "points": 2,
+    "slot": "Crew",
+    "faction": "Galactic Empire",
+    "id": 357
   }
 ]
